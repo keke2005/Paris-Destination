@@ -18,7 +18,7 @@ function changeColor() {
 }
 
 // Slideshow
-let slides = ["images/river.jpg", "images/Louvre Museum2.jpeg", "images/Eiffel Tower at night.jpeg"];
+let slides = ["river.jpg", "Louvre Museum2.jpeg", "Eiffel Tower at night.jpeg"];
 let index = 0;
 function showSlide() {
   if (document.getElementById("slide")) {
@@ -205,3 +205,4 @@ async function getWeather() {
 
 // Call the function when page loads
 getWeather();
+
