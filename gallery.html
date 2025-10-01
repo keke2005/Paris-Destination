@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paris in Pictures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="title">Paris in Pictures</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons" style="text-align:center; margin-bottom:20px;">
+      <button onclick="filterGallery('all')">Show All</button>
+      <button onclick="filterGallery('landmark')">Landmarks</button>
+      <button onclick="filterGallery('museum')">Museums</button>
+      <button onclick="filterGallery('river')">Rivers</button>
+    </div>
+
+    <!-- Image Gallery -->
+    <div id="gallery">
+      <figure class="gallery landmark">
+        <img src="Eiffel Tower.jpg" alt="Eiffel Tower">
+        <figcaption>Eiffel Tower</figcaption>
+      </figure>
+
+      <figure class="gallery museum">
+        <img src="Louvre Museum.webp" alt="Louvre Museum">
+        <figcaption>Louvre Museum</figcaption>
+      </figure>
+
+      <figure class="gallery river">
+        <img src="Seine River.webp" alt="Seine River">
+        <figcaption>Seine River</figcaption>
+      </figure>
+
+      <figure class="gallery landmark">
+        <img src="Notre-Dame.webp" alt="Notre-Dame Cathedral">
+        <figcaption>Notre-Dame Cathedral</figcaption>
+      </figure>
+
+      <figure class="gallery landmark">
+        <img src="Arc de Triomphe.webp" alt="Arc de Triomphe">
+        <figcaption>Arc de Triomphe</figcaption>
+      </figure>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); text-align:center; color:white;">
+      <span id="closeBtn" style="position:absolute; top:20px; right:30px; font-size:30px; cursor:pointer;">&times;</span>
+      <img id="big" style="max-width:90%; max-height:75%; margin-top:60px;">
+      <p id="bigCaption" style="margin-top:15px; font-size:18px; font-weight:bold;"></p>
+
+      <!-- Navigation Buttons -->
+      <button id="prevBtn" style="position:absolute; top:50%; left:30px; font-size:24px; padding:10px; cursor:pointer;">&#10094; Prev</button>
+      <button id="nextBtn" style="position:absolute; top:50%; right:30px; font-size:24px; padding:10px; cursor:pointer;">Next &#10095;</button>
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

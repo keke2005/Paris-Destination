@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Paris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="title">Discover Paris</h1>
+
+    <!-- Destination information injected by script.js -->
+    <div id="info"></div>
+
+    <!-- Floating image -->
+    <img src="Paris street.jpg" alt="Paris Street" class="float-img">
+
+    <!-- Blockquote -->
+    <blockquote>The Louvre is the world’s largest art museum with over 35,000 works on display.</blockquote>
+
+    <!-- Toggle Show More / Show Less -->
+    <p id="extra" style="display:none;">
+      Paris also has a lively nightlife, theaters, and seasonal festivals that attract millions every year.
+    </p>
+    <button onclick="toggleExtra()">Show More</button>
+
+    <!-- Random Fun Fact -->
+    <p id="fact"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

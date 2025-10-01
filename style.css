@@ -1,0 +1,216 @@
+/* Google Fonts */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background:#2d3142;
+  margin: 0;
+  padding: 20px 40px;
+}
+nav ul li { margin: 0 15px; }
+nav ul li a {
+  color:#d4af37;
+  text-decoration: none;
+  padding: 15px;
+  transition: 0.3s;
+}
+nav ul li a:hover { color: #ffd700; }
+nav ul li a.active { font-weight: bold; }
+
+/* Titles */
+.title {
+  text-align: center;
+  text-shadow: 2px 2px #ccc;
+  margin-top: 20px;
+}
+
+/* Hero Image */
+.hero {
+  position: relative;
+  text-align: center;
+}
+.hero img {
+  width: 65%;
+  max-height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.hero img:hover { transform: scale(1.05); }
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Quote */
+.quote {
+  font-style: italic;
+  text-align: right;
+  margin-right: 20px;
+}
+
+/* About Page */
+.float-img {
+  float: right;
+  margin: 0 0 10px 20px;
+  width: 250px;
+  border-radius: 8px;
+}
+blockquote {
+  background: #f0f0f0;
+  padding: 10px;
+  border-left: 5px solid #333;
+  font-style: italic;
+}
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+button:hover { background: #ffd700; color: #000; }
+.hidden { display: none; }
+.show { display: block; }
+
+/* About Page Background */
+.about-page {
+  background: #f9f7f1; /* soft beige background */
+  color: #2d3142;
+}
+
+/* Section Headings */
+.about-page h2, .about-page h3 {
+  color: #b22222; /* deep red */
+}
+
+/* Blockquote */
+blockquote {
+  background: #f0f0f0;
+  padding: 10px;
+  border-left: 5px solid #333;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+/* Gallery Filter Buttons */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.filter-buttons button {
+  background: #2d3142;
+  color: #d4af37;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-buttons button:hover {
+  background: #ffd700;
+  color: #000;
+}
+.filter-buttons button.active {
+  background: #d4af37;
+  color: #2d3142;
+  font-weight: bold;
+}
+
+/* Gallery Grid */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;   /* keeps items centered */
+  align-items: start;
+  text-align: center;
+}
+
+/* Each Figure (Image + Caption Block) */
+#gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers image + caption */
+  margin: 0;
+}
+
+/* Gallery Images */
+#gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+#gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Captions */
+#gallery figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+
+/* Lightbox */
+#lightbox button {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+#lightbox button:hover {
+  background: #ffd700;
+  color: black;
+}
+
+#weather {
+  background-color: #f0f8ff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  margin: 20px auto;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+#weather h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#weather p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul { flex-direction: column; }
+  .float-img { float: none; display: block; margin: 10px auto; }
+}
+

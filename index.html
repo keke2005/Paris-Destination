@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Paris!</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <!-- Navigation links to other pages -->
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main Heading -->
+    <h1 class="title">Welcome to Paris!</h1>
+
+    <!-- Dynamic Welcome Message -->
+    <p id="welcome"></p>
+
+    <!-- Button to change background -->
+    <button onclick="changeColor()">Change Background</button>
+
+    <!-- Slideshow -->
+    <div class="slideshow">
+      <img id="slide" src="images/Paris.jpeg" alt="Paris" width="400">
+      <br>
+      <button onclick="prevSlide()">Prev</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <!-- Introduction Section with pull quote -->
+    <section class="intro">
+      <p>
+        Paris, the city of lights, is one of the most visited places in the world. It is known for its romantic atmosphere, 
+        stunning architecture, delicious cuisine, and rich culture. From the Eiffel Tower to the Louvre Museum, 
+        Paris is filled with landmarks that captivate millions of travelers each year.
+      </p>
+      <!-- Pull Quote -->
+      <p class="quote">“Paris is always a good idea.”</p>
+      <p>
+        Whether you love art, fashion, food, or history, Paris has something for everyone. 
+        The city combines modern attractions with historic charm. Cafés line the streets, musicians play by the Seine River, 
+        and every corner seems like a postcard waiting to be captured.
+      </p>
+    </section>
+
+    <!-- Weather Information Section -->
+    <div id="weather">
+      <h2>Weather at your destination</h2>
+      <p id="temp">Temperature: -- °C</p>
+      <p id="condition">Condition: --</p>
+    </div>
+
+    <!-- Hero Image with caption -->
+    <div class="hero">
+      <img src="Eiffel Tower.jpg" alt="Eiffel Tower">
+      <div class="caption">The Eiffel Tower – Paris’ Icon</div>
+    </div>
+  </main>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
